@@ -1,0 +1,52 @@
+
+html {
+    font-size: 150%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: white;
+    
+}
+.board1{
+   height: 700px;
+   width: 1300px;
+   border: 2px solid red;
+   position: absolute;
+}
+
+.board1 img{
+    height: 700px;
+    width: 1300px;
+}
+@media (max-width: 1410px) {
+    .board1 img{
+        height: 600px;
+        width: 1100px;
+    }
+    
+}
+@media (max-width: 955px) {
+    p{
+        width: 1050px;
+    }
+}
+
+@media (max-width: 740px) {
+    html{
+        font-size: 180%;
+    }
+    
+}
+
+/*------p2-----------------*/
+.uberb1{
+    height: 600px;
+    width: 1100px;
+    border: 2px solid red;
+ }
+ 
+ .uberb1 img{
+     height: 600px;
+     width: 1100px;
+ }

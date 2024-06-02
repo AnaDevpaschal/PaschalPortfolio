@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uber Analysis Report</title>
+        <link rel="stylesheet" href="p.css">
+        <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    
+    </head>
+
+    <body>
+        <div class="introduction">
+            <h1>UBER DATA ANALYSIS USING R-GGPLOT</h1>
+        </div>
+
+        <div class="uberb1">
+            <img src="images/UberDashB.png" alt="">
+        </div>
+
+        <div class="introduction">
+            <h2>1. INTRODUCTION:</h2>
+            <p>Uber has emerged as leading company in the provision of new transportation options within the 
+            contemporary world. Uber, then, is primarily in the business of networking, and all the company's emerging 
+            operations can be conceptualized in terms of simply providing a medium through which the relevant supply can 
+            meet up with the relevant demand. Analytics is a tremendously growing niche that people apply in their 
+            businesses to give it a boost.</p>
+            <p>In this R project, our objective is to analyze the Uber Pickups in New York City dataset. 
+            This is more of a data visualization project that will guide us towards using the ggplot2 library for understanding
+             the data and developing an intuition to understand the customers who avail the trips.</p>
+        </div>
+
+        <div class="listobj">
+            <h3>Our main objectives are:</h3>
+            <ul>
+                <li>Visualize Uber's growth in NYC</li>
+                <li>Characterize the demand based on identified patterns in the time series</li>
+                <li>Estimate the value of the NYC market for Uber.</li>
+                <li>Other insights about the usage of the service.</li>
+                <li>Attempt to predict the demand's growth.</li>
+            </ul>
+        </div>
+        <div class="method">
+            <h2>2. METHOD AND MATERIAL</h2>
+            <h3>DATASET</h3>
+            <p>The dataset contains information about Uber pickups in New York City from April 2014 to September 2014. 
+            It has over 500k pickups (rows) and the following 4 columns:</p>
+                <li>Date/Time -The date and time of pickup.</li>
+                <li>Lat -Latitude of pickup.</li>
+                <li>Long -Longitude of pickup.</li>
+                <li>Base.</li>
+            <h3>LIBRARIES USED</h3>
+            <li><b>Ggplot2:</b> it is the main part of the project, and it is used widely to create aesthetic visualization plots.</li>
+            <br>
+            <li><b>Ggthemes:</b> it is a library for many themes from which the user can get the desired scale for their database.</li>
+            <br>
+            <li><b>Lubridate:</b> it consists of time frames, and it should be in separate time categories.</li>
+            <br>
+            <li><b>Tidyr:</b> it enables you swiftly convert between different data formats for plotting and analysis.</li>
+            <br>
+            <li><b>Dplyr:</b> it helps for easy data manipulation.</li>
+            <br>
+            <li><b>Tidyverse:</b> it assist with data import, tidying, manipulation, and data visualization.</li>
+            <br>
+            <li><b>DT:</b> this provides a function datatable() to display R data via the Data Tables library.</li>
+            <br>
+            <li><b>Scales:</b> this provides the internal scaling infrastructure used by ggplot2, and gives you tools
+                 to override the default breaks, labels, transformations and palettes.</li>
+                 
+        </div>
+        <div class="procedure">
+            <h2>3. PROCEDURES:</h2>
+            <ul>
+                <li>1. Importing the Essential Packages.</li>
+                <li>2. Creating vector of colours to be implemented in our plots.</li>
+                <li>3. Reading the Data into their designated variables.</li>
+                <li>4. Plotting the trips by the hours in a day.</li>
+                <li>5. Plotting data by trips during every day of the month</li>
+                <li>6. Finding the number of Trips taking place during months in a year.</li>
+                <li>7. Finding the total trips in a month.</li>
+                <li>8. Creating a Heatmap visualization of day, hour and month</li>
+                <li>9. Creating a map visualization of rides in New York.</li>
+                <li>10. Collecting insights from all visualizations.</li>
+            </ul>
+            <h2>4. PROPOSED SYSTEM:</h2>
+            <p>We proposed that we will build a data visualization project with ggplot2 using R and its libraries.<br>
+            Analyse various parameters like (a) Trips by the hours in a day (b) Trips during months in a year. 
+            At the end create visualizations for different timeframes of the year. Explain how time affects customer trips.
+            </p>
+            <li>Customers are often dissatisfied with traditional cab companies because of their highprices and long stand 
+            by time and hence can exploit new and big markets.</li>
+            <li>Find the days on which each basement has a greater number of active vehicles.</li>
+            <li>Can tap growing markets in suburban areas where taxi services are not available.</li>
+            <li>Estimated Time of Arrival can be reduced with increase in the number of Uber drivers which successively 
+            will make Uber more liked by the customers and hence, the company will get more revenue and drivers will 
+            also be profited.</li>
+            <p>Based on the data, we will find the destination people travel the most that generate high airline revenues 
+            for travel, formed on booked trip count.</p>
+
+            <h2>5. RESULTS</h2>
+            <p>At the end of all procedure we get to see different graphs giving us unbelievable insights.</p>
+
+    
+        </div>
+        <div class="mtrips">
+            <h3>A. Trips in a month</h3>
+            <img src="images/work1.png">
+            <p></p>
+
+        </div>
+    </div>
+    <div class="mtrips">
+        <h3>B. Trips by hours in a day</h3>
+        <img src="images/Trips Every Hour.png">
+        <p></p>
+
+    </div>
+</div>
+<div class="mtrips">
+    <h3>C. Trips per hour</h3>
+    <img src="images/Trips by Hour and month.png">
+    <p></p>
+
+</div>
+
+<div class="mtrips">
+    <h3>E. Trips per day of the month</h3>
+    <img src="images/Trips by day of the month.png">
+    <p></p>
+
+</div>
+<div class="mtrips">
+    <h3>F. Trips in a month</h3>
+    <img src="images/Trips by Day and Month.png">
+    <p></p>
+
+</div>
+<div class="mtrips">
+    <h3>G. HeatMap 1</h3>
+    <img src="images/HeatMap by Hour and Day.png">
+    <p></p>
+
+</div>
+<div class="mtrips">
+    <h3>H. HeatMap 2</h3>
+    <img src="images/HeatMap by Month and Day of the Week.png">
+    <p></p>
+
+</div>
+
+<div class="mtrips">
+    <h3>C. Map Visualization</h3>
+    <img src="images/work2.png">
+    <p></p>
+
+    <h2>6. CONCLUSION</h2>
+    <p>At the end of this Uber data analysis R project, we studied how to create data visualizations. 
+        We used package ggplot2 that helped us to plot various types of visualizations that pertained to 
+        several time-frames of the year.<br>
+        With this, we conclude how time and place affected customer trips.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
